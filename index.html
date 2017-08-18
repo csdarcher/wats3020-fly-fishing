@@ -8,7 +8,7 @@
         <meta name="author" content="Carly Darcher">
         <meta name="description" content="A Pacific Northwest Fly Fishing Lifestyle Blog">
         <link rel="stylesheet" href="style.css">
-        <script src="main.js" defer></script>
+        <script src="js/main.js" defer></script>
         <link href="https://fonts.googleapis.com/css?family=Cabin|Sedgwick+Ave" rel="stylesheet">
     </head>
     <body>
@@ -19,58 +19,54 @@
           <a href="#fly-month">Fly of the Month</a>
           <a href="#location">Location Hotspot</a>
           <a href="#about">About</a>
-          <a href="#contact">Contact</a>
          </div>
         </header> 
       
-        <div class="slideshow-container">
+     <div class="slideshow-container">
             <div class="mySlides fade">
               <div class="numbertext">1 / 3</div>
               <img src=img/river1.jpg style="width:100%">
-              <div class="text">This is a beautiful river</div>
+              <div class="text">Caption Text</div>
             </div>
 
             <div class="mySlides fade">
               <div class="numbertext">2 / 3</div>
-              <img src=img/river_boat.jpg style="width:100%">
-              <div class="text">Another beautiful river</div>
+              <img src=img/river6.jpg style="width:100%">
+              <div class="text">Caption Two</div>
             </div>
 
             <div class="mySlides fade">
               <div class="numbertext">3 / 3</div>
-              <img src=img/steelhead.jpg style="width:100%">
-              <div class="text">This is a fish</div>
+              <img src=img/steelhead2.jpg style="width:100%">
+              <div class="text">Caption Three</div>
             </div>
 
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
           </div>
-        <br>
+          <br>
 
-        <div style="text-align:center">
-          <span class="dot" onclick="currentSlide(1)"></span> 
-          <span class="dot" onclick="currentSlide(2)"></span> 
-          <span class="dot" onclick="currentSlide(3)"></span> 
-        </div>
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+          </div>
         
-      
+      <div class = "main">
       <section class = fly-month>
         <h2>Fly of the Month</h2>    
         <section id = fly-month>
             <img src=img/fly2.jpg alt="Some fly" style="width:304px;height:228px;">
-            <div class="tab">
-              <button class="tablinks" onclick="openFly(event, 'Description')">Description</button>
-              <button class="tablinks" onclick="openFly(event, 'Specs')">Specs</button>
-           </div>
-            <div id="Description" class="tabcontent">
-              <h3>Description</h3>
-              <p>This fly is awesome.</p>
-            </div>
-            <div id="Specs" class="tabcontent">
-              <h3>Specs</h3>
-              <p>Here's how he made this awesome fly</p> 
-            </div> 
-            </section>    
+            <button class="accordion">Description</button>
+                <div class="Description">
+                  <p>This is an awesome fly</p>
+                </div>
+
+                <button class="accordion">Specs</button>
+                <div class="Specs">
+                  <p>Here's how he made awesome fly</p>
+                </div> 
+          </section>
         </section>
         
         <section class = location-hotspot>
@@ -84,38 +80,30 @@
         </section> 
         
         <section class = About>
-        <h2>About</h2> 
-            <section id = biography>
-                <img src=img/andy.jpg alt="Fly Fisher Andy Darcher" style="width:304px;height:228px;">
-                <p>Andy Darcher grew up in the small town of Naselle located on the southwest coast of Washington State. Living so close to the Columbia River and Willapa Bay, fishing has been a part of his life since as long as he can remember. He started fly fishing around the age of 12 and started tying his own flies soon after. Most days you can find him fly fishing on the Olympic Peninsula for steelhead.</p>   
-            </section>    
-        </section> 
-      
-        <section class = Contact>
-          <h2>Contact</h2> 
-            <section id = contact>
-                <p>a.darcher@email.com</p>   
-            </section>    
-        </section> 
-        
-        <footer>
-            <ul>
-              <li href="#home">Home</li>
-              <li href="#fly-month">Fly of the Month</li>
-              <li href="#location">Location Hotspot</li>
-              <li href="#about">About</li>
-              <li href="#contact">Contact</li>
-            </ul>
+          <h2>About</h2>   
+          <img src=img/andy.jpg alt="Fly Fisher Andy Darcher" style="width:304px;height:228px;">
+          <button class="accordion">Biography</button>
+              <div class="About">
+                   <p>Andy Darcher grew up in the small town of Naselle located on the southwest coast of Washington State. Living so close to the Columbia River and Willapa Bay, fishing has been a part of his life since as long as he can remember. He started fly fishing around the age of 12 and started tying his own flies soon after. Most days you can find him fly fishing on the Olympic Peninsula for steelhead.</p>   
+              </div>
 
-            <section class = social-media>
-                <h3>Spread the word!</h3>
+              <button class="accordion">Contact</button>
+              <div class="contact">
+                <p>a.darcher@email.com</p>   
+                <p>fishbook</p> 
+              </div>
+
+              <button class="accordion">Social Media</button>
+              <div class="panel">
                 <ul>
                 <li>twitter</li>
                 <li>facebook</li>
-                <li>instagram</li>
-                <li>fishbook</li>
-            </ul>
-            </section>    
+                <li>instagram</li> 
+                </ul>
+              </div>
+        
+        <footer>
+          <p> This website was made by Carly Darcher 2017 </p>
         </footer>
     </body>
 </html>    
