@@ -1,6 +1,6 @@
 
 body {
-    background: #DDDDBB;
+    background:#DCDCDC;
     color: #545454;
     font-family: 'Cabin', sans-serif;
     font-family: 'Sedgwick Ave', cursive;
@@ -36,7 +36,7 @@ b, strong {
 
 header {
     overflow: hidden;
-    background-color: #333;
+    background-color: #4B2C34;
     position: fixed; /* Set the header to fixed position */
     top: 0; /* Position the header at the top of the page */
     width: 100%; /* Full width */
@@ -70,20 +70,29 @@ header h1 {
 .navbar a {
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: silver;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+}
+
+.navbar a:hover{
+  color: #4B2C34;
+}
+ 
+  
 }
 /* Main content */
 .main {
     margin-top: 30px; /* Add a top margin to avoid content overlay */
     padding-left: 10px;
 }
+
 /* Style the buttons that are used to open and close the accordion panel */
 button.accordion {
     background-color: #447878;
     color: silver;
+    font-size: 1em;
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -93,9 +102,9 @@ button.accordion {
     transition: 0.4s;
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
 button.accordion:hover {
-    background-color: #ddd;
+    background-color: #4B2C34;
 }
 
 button.accordion.active {
@@ -106,7 +115,7 @@ button.accordion.active {
 /* Style the accordion panel. Note: hidden by default */
 div.panel {
     padding: 0 18px;
-    background-color: white;
+    background-color: silver;
     display: none;
 }
 
@@ -118,6 +127,7 @@ div.panel {
   max-width: 600px;
   position: relative;
   margin: auto;
+  z-index: -1;
 }
 
 /* Next & previous buttons */
@@ -128,7 +138,7 @@ div.panel {
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  color: white;
+  color: black;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -203,8 +213,9 @@ div.panel {
 footer {
   background-color: #4B2C34;
   padding-left: 10px;
+  color: silver;
+  height: 100px;
 }
 
-.social-media {
- float: right;
-}
+
+

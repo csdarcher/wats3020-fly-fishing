@@ -28,7 +28,6 @@ function showSlides(n) {
 }
 
 // Code for Accordion Tabs
-
 let acc = document.getElementsByClassName("accordion");
 let i;
 
