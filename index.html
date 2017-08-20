@@ -15,14 +15,14 @@
         <header>
         <h1>Darcher Fly Fishing NW</h1>  
          <div class="navbar" id="myNavBar">
-          <a href="#home">Home</a>
-          <a href="#fly-month">Fly of the Month</a>
+          <a href="#slideshow-container">Home</a>
+          <a href="#featured-fly">Featured Fly</a>
           <a href="#location">Location Spotlight</a>
           <a href="#about">About</a>
          </div>
         </header> 
       
-     <div class="slideshow-container">
+      <div id="slideshow-container">
             <div class="mySlides fade">
               <div class="numbertext">1 / 3</div>
               <img src=img/river1.jpg style="width:100%">
@@ -51,65 +51,69 @@
             <span class="dot" onclick="currentSlide(2)"></span> 
             <span class="dot" onclick="currentSlide(3)"></span> 
           </div>
-        
-      <div class = "main">
-      <section class = fly-month>
-        <h2>Fly of the Month</h2>    
-        <section id = fly-month>
-            <img src=img/fly2.jpg alt="Some fly" style="width:354px;height:278px;">
-            <button class="accordion">Description</button>
-                <div class="Description">
-                  <p>This is a Brad's Brat - a classic Steelhead fly designed Enos Bradner. </p>
-                </div>
+      
+       <div class = "main">  
+        <section id ="featured-fly">
+              <h2>Featured Fly</h2>    
+                  <img src=img/fly2.jpg alt="Some fly" style="width:354px;height:278px;">
+                  <button class="accordion">Description</button>
+                    <div class="panel">
+                      <div class="Description">
+                        <p>This is a Brad's Brat - a classic Steelhead fly designed Enos Bradner. </p>
+                      </div>
+                    </div> 
+                      <button class="accordion">Specs</button>
+                        <div class="panel">
+                          <div class="Specs">
+                            <p>Hook: Salmon/steelhead, No.2/0-6</p>
+                            <p>Tag: Flat silver or gold tinsel</p>
+                            <p>Tail: Orange pheasant crest</p>
+                            <p>Body: Half orange, half red dubbing</p>
+                            <p>Rib: Gold or silver oval tinsel</p>
+                            <p>Hackle: Brown hen or pheasant</p>
+                            <p>Wing: Orange over white polar bear or substitute. For this pattern I substituted a few strands of orange Krystal Flash.</p>
+                            <p>Cheeks: Jungle cock (optional)</p>
+                          </div> 
+                        </div>  
+         
+              </section>
 
-                <button class="accordion">Specs</button>
-                <div class="Specs">
-                  <p>Hook: Salmon/steelhead, No.2/0-6</p>
-                  <p>Tag: Flat silver or gold tinsel</p>
-                  <p>Tail: Orange pheasant crest</p>
-                  <p>Body: Half orange, half red dubbing</p>
-                  <p>Rib: Gold or silver oval tinsel</p>
-                  <p>Hackle: Brown hen or pheasant</p>
-                  <p>Wing: Orange over white polar bear or substitute. For this pattern I substituted a few strands of orange Krystal Flash.</p>
-                  <p>Cheeks: Jungle cock (optional)</p>
-                </div> 
-          </section>
-        </section>
-        
-        <section class = location-spotlight>
-        <h2>Location Spotlight</h2>    
-            <section id = location>
-                <div class = location-photo>
-                <!-- insert location photo here --> 
-                </div>    
-                <p>The Naselle is a picturesque river that originates in the Willapa Hills and flows generally west, passing the community of Naselle before emptying into the southern part of Willapa Bay. It is known for its trout and salmon fishing.</p>  
-            </section>    
+        <section id ="location">
+          <h2>Location Spotlight</h2>    
+                  <div class = location-photo>
+                  <img src=img/Naselle.JPG alt="Naselle River" style="width:354px;height:278px;">
+                  </div>    
+                  <p>The Naselle is a picturesque river that originates in the Willapa Hills and flows generally west, passing the community of Naselle before emptying into the southern part of Willapa Bay. It is known for its trout and salmon fishing.</p>  
         </section> 
         
-        <section class = About>
+        <section id ="about">
           <h2>About</h2>   
           <img src=img/andy.jpg alt="Fly Fisher Andy Darcher" style="width:354px;height:278px;">
           <button class="accordion">Biography</button>
+            <div class="panel">
               <div class="About">
                    <p>Andy Darcher grew up in the small town of Naselle located on the southwest coast of Washington State. Living so close to the Columbia River and Willapa Bay, fishing has been a part of his life since as long as he can remember. He started fly fishing around the age of 12 and started tying his own flies soon after. Most days you can find him fly fishing on the Olympic Peninsula for steelhead.</p>   
               </div>
-
+            </div> 
               <button class="accordion">Contact</button>
-              <div class="contact">
-                <p>aj.darcher@yahoo.com</p>   
-              </div>
-
+                <div class="panel">
+                  <div class="contact">
+                    <p>aj.darcher@yahoo.com</p>   
+                  </div>
+                </div>  
               <button class="accordion">Social Media</button>
-              <div class="panel">
-                <ul>
-                <li>twitter</li>
-                <li>facebook</li>
-                <li>instagram</li> 
-                </ul>
-              </div>
-        
+                <div class="panel">
+                  <ul>
+                  <li>twitter</li>
+                  <li>facebook</li>
+                  <li>instagram</li> 
+                  </ul>
+                </div>
+         </section>
+       </div>
+         
         <footer>
-          <p> This website was made by Carly Darcher 2017 </p>
+          <p> This website was made by Carly Darcher &copy; 2017 </p>
         </footer>
     </body>
 </html>    

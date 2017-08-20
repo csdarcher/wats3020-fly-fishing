@@ -14,6 +14,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #222;
     font-weight: 600;
     line-height: 1.3;
+    margin-left: 10px;
 }
 
 h2 {
@@ -22,6 +23,7 @@ h2 {
 
 p {
     font-family: 'Cabin', sans-serif;
+    margin-left: 10px;
 }
 
 
@@ -88,6 +90,10 @@ header h1 {
     padding-left: 10px;
 }
 
+.main img {
+  margin-left: 10px;
+}
+
 /* Style the buttons that are used to open and close the accordion panel */
 button.accordion {
     background-color: #447878;
@@ -119,11 +125,24 @@ div.panel {
     display: none;
 }
 
+/* Add "+" and "-" symbols to accordion tabs */
+button.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
 /* Photo Slideshow*/
   *{box-sizing:border-box}
 
 /* Slideshow container */
-.slideshow-container {
+#slideshow-container {
   max-width: 600px;
   position: relative;
   margin: auto;
@@ -210,11 +229,31 @@ div.panel {
   to {opacity: 1}
 }
 
-footer {
+#location {
   background-color: #4B2C34;
-  padding-left: 10px;
+  height: 425px;
   color: silver;
-  height: 100px;
+  margin-top: 15px;
+  padding-top: 8px;
+}
+
+.location-spotlight p {
+  float: right;
+  font-size: 20px;
+}
+
+.location-spotlight h2 {
+  background-color: #447878;
+  color: silver;
+  margin-bottom: 0;
+}
+
+footer {
+  background-color: #DCDCDC;
+  padding-left: 10px;
+  color: #4B2C34;
+  height: 50px;
+  text-align: center;
 }
 
 
