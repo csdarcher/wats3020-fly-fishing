@@ -1,6 +1,6 @@
 
 body {
-    background:#DCDCDC;
+    background: #DCDCDC;
     color: #545454;
     font-family: 'Cabin', sans-serif;
     font-family: 'Sedgwick Ave', cursive;
@@ -118,11 +118,13 @@ button.accordion.active {
 }
 
 
-/* Style the accordion panel. Note: hidden by default */
+/* Style the accordion panel.*/
 div.panel {
     padding: 0 18px;
-    background-color: silver;
-    display: none;
+    background-color: #DCDCDC;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in;
 }
 
 /* Add "+" and "-" symbols to accordion tabs */
@@ -149,31 +151,6 @@ button.accordion.active:after {
   z-index: -1;
 }
 
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: black;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
 
 /* Caption text */
 .text {
@@ -195,22 +172,6 @@ button.accordion.active:after {
   top: 0;
 }
 
-/* The dots/bullets/indicators */
-.dot {
-  cursor:pointer;
-  height: 13px;
-  width: 13px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
@@ -229,6 +190,7 @@ button.accordion.active:after {
   to {opacity: 1}
 }
 
+/* Styling for Location section */
 #location {
   background-color: #4B2C34;
   height: 425px;
@@ -248,6 +210,7 @@ button.accordion.active:after {
   margin-bottom: 0;
 }
 
+/* Styling for Footer*/
 footer {
   background-color: #DCDCDC;
   padding-left: 10px;
@@ -256,5 +219,7 @@ footer {
   text-align: center;
 }
 
-
+#andy-darcher {
+  cursor: pointer;
+}
 

@@ -1,4 +1,3 @@
-
 // Code makes slideshow play automatically
 let slideIndex = 0;
 showSlides();
@@ -21,17 +20,25 @@ let i;
 
 for (i = 0; i < acc.length; i++) {
     acc[i].onclick = function(){
-        /* Toggle between adding and removing the "active" class,
-        to highlight the button that controls the panel */
-        this.classList.toggle("active");
+        this.classList.toggle("active"); // Adds or removes "active" class
 
-        /* Toggle between hiding and showing the active panel */
-        var panel = this.nextElementSibling;
-        if (panel.style.display === "block") {
-            panel.style.display = "none";
+        /* Code below causes accordion tab to slide open and close when clicked*/
+        let panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
         } else {
-            panel.style.display = "block";
+            panel.style.maxHeight = panel.scrollHeight + "px";
         }
     }
 }
+
+// Code adds a pop up message to photo
+let darcher = document.querySelector('#andy-darcher');
+
+function popUpMessage(event) {
+  alert('Thank you for visiting my site!');
+}
+
+darcher.addEventListener('click', popUpMessage);
+                    
 
