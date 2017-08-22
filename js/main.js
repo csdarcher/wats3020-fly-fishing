@@ -14,6 +14,15 @@ function showSlides() {
     setTimeout(showSlides, 5000); // Image will change every 5 seconds
 }
 
+// Code that will add caption information to slideshow
+
+let slideshowData = [
+  {title: 'Skagit River', filename: "river1.jpg"},
+  {title: 'Raft on the Hoh River', filename: "river6jpg"},
+  {title: 'Hatchery Steelhead', filename: "steelhead2.jpg"}
+]
+
+
 // Code for Accordion Tabs
 let acc = document.getElementsByClassName("accordion");
 let i;
@@ -31,6 +40,7 @@ for (i = 0; i < acc.length; i++) {
         }
     }
 }
+
 
 // Code adds a pop up message to photo
 let darcher = document.querySelector('#andy-darcher');

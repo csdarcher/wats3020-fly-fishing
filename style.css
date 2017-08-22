@@ -42,7 +42,7 @@ header {
     position: fixed; /* Set the header to fixed position */
     top: 0; /* Position the header at the top of the page */
     width: 100%; /* Full width */
-    height: 350px;
+    height: 300px;
     background-image: url('img/river8.jpg');
     background-repeat: no-repeat;
     background-position: center center;
@@ -51,11 +51,12 @@ header {
     
 }
 
+
 header h1 {
-  margin-top: 175px;
+  margin-top: 130px;
   text-align: center;
   color: silver;
-  font-size: 625%;
+  font-size: 425%;
 }
 
 /* The navigation bar */
@@ -86,7 +87,7 @@ header h1 {
 }
 /* Main content */
 .main {
-    margin-top: 30px; /* Add a top margin to avoid content overlay */
+    margin-top: 10px; /* Add a top margin to avoid content overlay */
     padding-left: 10px;
 }
 
@@ -193,7 +194,7 @@ button.accordion.active:after {
 /* Styling for Location section */
 #location {
   background-color: #4B2C34;
-  height: 425px;
+  height: 455px;
   color: silver;
   margin-top: 15px;
   padding-top: 8px;
@@ -222,4 +223,5 @@ footer {
 #andy-darcher {
   cursor: pointer;
 }
+
 
