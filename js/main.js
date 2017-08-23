@@ -14,7 +14,7 @@ function showSlides() {
     setTimeout(showSlides, 5000); // Image will change every 5 seconds
 }
 
-// Code that will add caption information to slideshow
+/*Code that will add caption information to slideshow
 
 let slideshowData = [
   {title: 'Skagit River', filename: "river1.jpg"},
@@ -22,6 +22,12 @@ let slideshowData = [
   {title: 'Hatchery Steelhead', filename: "steelhead2.jpg"}
 ]
 
+let slides = ["title", "filename"];
+
+for (let slideshowData of slides){
+    
+}
+*/
 
 // Code for Accordion Tabs
 let acc = document.getElementsByClassName("accordion");

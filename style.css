@@ -6,8 +6,8 @@ body {
     font-family: 'Sedgwick Ave', cursive;
     font-size: 16px;
     line-height: 1.5;
-    margin-top: 375px;
-    margin-left: 0;   
+    margin-left: 0;
+    margin-right: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -39,24 +39,26 @@ b, strong {
 header {
     overflow: hidden;
     background-color: #4B2C34;
-    position: fixed; /* Set the header to fixed position */
     top: 0; /* Position the header at the top of the page */
-    width: 100%; /* Full width */
     height: 300px;
     background-image: url('img/river8.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     margin-left: 0;
-    
+    margin-right: 0;
 }
 
 
 header h1 {
-  margin-top: 130px;
   text-align: center;
   color: silver;
   font-size: 425%;
+  margin-top: 150px;
+}
+
+header img {
+  width: 100%;
 }
 
 /* The navigation bar */
@@ -70,8 +72,18 @@ header h1 {
 }
 
 /* Links inside the navbar */
-.navbar a {
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #447878;
+}
+
+.navbar li {
     float: left;
+}
+
+.navbar li a {
     display: block;
     color: silver;
     text-align: center;
@@ -79,20 +91,23 @@ header h1 {
     text-decoration: none;
 }
 
-.navbar a:hover{
-  color: #4B2C34;
+.navbar li a:hover {
+  background-color: #4B2C34;
 }
  
   
 }
 /* Main content */
 .main {
-    margin-top: 10px; /* Add a top margin to avoid content overlay */
     padding-left: 10px;
 }
 
 .main img {
   margin-left: 10px;
+}
+
+.main {
+    margin-top: 30px; /* Add a top margin to avoid content overlay */
 }
 
 /* Style the buttons that are used to open and close the accordion panel */
@@ -146,10 +161,11 @@ button.accordion.active:after {
 
 /* Slideshow container */
 #slideshow-container {
-  max-width: 600px;
+  max-width: 550px;
   position: relative;
   margin: auto;
   z-index: -1;
+  margin-top: 30px;
 }
 
 
@@ -193,9 +209,9 @@ button.accordion.active:after {
 
 /* Styling for Location section */
 #location {
-  background-color: #4B2C34;
+  background-color: #779977;
   height: 455px;
-  color: silver;
+  color: black;
   margin-top: 15px;
   padding-top: 8px;
 }
@@ -205,11 +221,13 @@ button.accordion.active:after {
   font-size: 20px;
 }
 
-.location-spotlight h2 {
-  background-color: #447878;
-  color: silver;
+#location h2 {
+  background-color: #779977;
+  color: black;
   margin-bottom: 0;
 }
+
+
 
 /* Styling for Footer*/
 footer {
