@@ -1,6 +1,6 @@
 // Code makes slideshow play automatically
 let slideIndex = 0;
-showSlides();
+
 
 function showSlides() {
     let i;
@@ -14,20 +14,45 @@ function showSlides() {
     setTimeout(showSlides, 5000); // Image will change every 5 seconds
 }
 
-/*Code that will add caption information to slideshow
+// Code that adds captions to slideshow
 
 let slideshowData = [
   {title: 'Skagit River', filename: "river1.jpg"},
-  {title: 'Raft on the Hoh River', filename: "river6jpg"},
+  {title: 'Raft on the Hoh River', filename: "river6.jpg"},
   {title: 'Hatchery Steelhead', filename: "steelhead2.jpg"}
 ]
 
-let slides = ["title", "filename"];
-
-for (let slideshowData of slides){
-    
+let slideCount = 0;
+let slideshowContainer = document.querySelector("#slideshow-container");
+for (let slide of slideshowData){
+  
+  let slideContainer = document.createElement('div');
+  slideContainer.setAttribute('class', 'mySlides fade');
+  
+  let numberText = document.createElement('div');
+  numberText.setAttribute('class', 'numbertext');
+  numberText.innerHTML = `${slideCount + 1}/${slideshowData.length}`;
+  
+  let img = document.createElement('img');
+  img.setAttribute('src', `img/${slide.filename}`);
+  img.style.width = "100%";
+  
+  let text = document.createElement('div');
+  text.innerHTML = slide.title;
+  text.setAttribute('class', 'text');
+  
+ 
+ slideContainer.appendChild(numberText);
+ slideContainer.appendChild(img);
+ slideContainer.appendChild(text);
+ 
+ slideshowContainer.appendChild(slideContainer); 
+ slideCount++; 
 }
-*/
+
+showSlides();
+
+
 
 // Code for Accordion Tabs
 let acc = document.getElementsByClassName("accordion");
