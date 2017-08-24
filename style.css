@@ -1,6 +1,6 @@
 
 body {
-    background: #DCDCDC;
+    background: #628484;
     color: #545454;
     font-family: 'Cabin', sans-serif;
     font-family: 'Sedgwick Ave', cursive;
@@ -19,14 +19,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2 {
-    margin-top: 50px;
+    text-align: center;
 }
 
 p {
     font-family: 'Cabin', sans-serif;
     margin-left: 10px;
+    color: silver;
 }
 
+li {
+   font-family: 'Cabin', sans-serif;
+    margin-left: 10px;
+    color: silver;
+}
 
 a {
     color: #0083e8;
@@ -62,40 +68,6 @@ header img {
   width: 100%;
 }
 
-/* The navigation bar */
-.navbar {
-    overflow: hidden;
-    background-color: #447878;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
-    
-}
-
-/* Links inside the navbar */
-.navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: #447878;
-}
-
-.navbar li {
-    float: left;
-}
-
-.navbar li a {
-    display: block;
-    color: silver;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-.navbar li a:hover {
-  background-color: #4B2C34;
-}
- 
   
 }
 /* Main content */
@@ -139,7 +111,7 @@ button.accordion.active {
 div.panel {
     padding: 0 18px;
     background-color: #DCDCDC;
-    max-height: 0;
+    max-height: 0px;
     overflow: hidden;
     transition: max-height 0.3s ease-in;
 }
@@ -151,6 +123,8 @@ button.accordion:after {
     color: #777;
     float: right;
     margin-left: 5px;
+    background-color: #DCDCDC;
+    z-index: +1;
 }
 
 button.accordion.active:after {
@@ -208,13 +182,45 @@ button.accordion.active:after {
   to {opacity: 1}
 }
 
-/* Styling for Location section */
-#location {
-  background-color: #779977;
+
+#featured-fly {
+  background-color: #628484;
   height: 455px;
   color: black;
-  margin-top: 50px;
   padding-top: 8px;
+}
+
+#featured-fly img {
+    display: block;
+    margin: auto;
+    width: 40%;
+}
+
+#about {
+  background-color: #628484;
+  height: 455px;
+  color: black;
+  padding-top: 8px;
+}
+
+#about img {
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    width: 40%;
+}
+
+#featured-fly p {
+   text-align: center;
+}
+
+/* Styling for Location section */
+#location {
+  background-color: #628484;
+  height: 455px;
+  color: black;
+  padding-top: 8px;
+  text-align: center;
 }
 
 .location-spotlight p {
@@ -223,16 +229,20 @@ button.accordion.active:after {
 }
 
 #location h2 {
-  background-color: #779977;
+  background-color: #628484;
   color: black;
   margin-bottom: 0;
 }
 
-
+#location img {
+    display: block;
+    margin: auto;
+    width: 40%;
+}
 
 /* Styling for Footer*/
 footer {
-  background-color: #DCDCDC;
+  background-color: #628484;
   padding-left: 10px;
   color: #4B2C34;
   height: 50px;
@@ -242,5 +252,39 @@ footer {
 #andy-darcher {
   cursor: pointer;
 }
+
+.parallax { 
+    /* The image used */
+    background-image: url('img/river7.jpg');
+
+    /* Set a specific height */
+    height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+    /* The image used */
+    background-image: url('img/river2.jpg');
+
+    /* Set a specific height */
+    height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+
+
 
 
